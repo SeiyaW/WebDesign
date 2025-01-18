@@ -169,6 +169,65 @@ iframe{
     text-align: center;
 }
 
+#header-area .mainvisual .page-title{
+    width: 100%;
+    max-width: 300px;
+    background-color: #f2ece1;
+    border-radius: 0 30px 0 0;
+    padding-top: 15px;
+    text-align: center;
+    position: absolute;
+    bottom: -1px;
+    left: -1px;
+}
+#header-area .mainvisual .page-title .ja{
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 5px;
+}
+#header-area .mainvisual .page-title .en{
+    display: block;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+#access{
+    background-color: #e9e1d1;
+    padding: 80px 0;
+}
+#access .inner{
+    display: flex;
+}
+#access .info{
+    font-size: 14px;
+    margin-right: auto;
+}
+#access .info dt{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#access .info dd{
+    margin-bottom: 20px;
+}
+#access .map{
+    width: 100%;
+    max-width: 580px;
+    height: 360px;
+    margin: 0 40px;
+}
+#access .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper-1300{
+    max-width: 1340px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 /* ---------------------------------- 
 スマートフォン
 ---------------------------------- */
@@ -295,5 +354,30 @@ iframe{
     #footer .menu-area .sns li{
         font-size: 12px;
         margin: 0 10px;
+    }
+
+    #access{
+        padding: 60px 0;
+    }
+    #access .inner{
+        flex-direction: column-reverse;
+    }
+    #access .info dd:last-child{
+        margin-bottom: 0;
+    }
+    #access .map{
+        height: 240px;
+        margin: 0 0 20px;
+    }
+
+    #header-area .mainvisual .page-title{
+        max-width: 180px;
+        line-height: 0.8;
+    }
+    #header-area .mainvisual .page-title .ja{
+        font-size: 10px;
+    }
+    #header-area .mainvisual .page-title .en{
+        font-size: 18px;
     }
 }
